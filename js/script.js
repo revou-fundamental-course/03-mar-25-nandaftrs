@@ -1,5 +1,16 @@
 // ini file javascript
 
+// Welcoming Speech
+document.addEventListener("DOMContentLoaded", function () {
+  let userName = prompt("Masukkan nama Anda:");
+  if (userName) {
+    document.getElementById(
+      "welcomeText"
+    ).innerText = `Hi, ${userName} 👋🏻. 
+    Selamat Datang di Website Ku`;
+  }
+});
+
 // Slideshow Functionality
 let slideIndex = 0;
 function showSlides() {
